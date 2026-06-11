@@ -1,0 +1,25 @@
+# Ignore environment variables file
+.env
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+main.py
+.python-version
+.DS_Store
+
+# Virtual environments
+.venv
+
+# Airflow
+logs/
+config/airflow.cfg
+plugins/
+pyproject.toml
+uv.lock
+dataset/
+org_dataset/
