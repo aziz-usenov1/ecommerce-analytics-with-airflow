@@ -78,48 +78,30 @@ Apache Superset Dashboards
 
 ---
 
-## Source Data
+## Dataset
 
-The pipeline processes four datasets:
+This project uses the publicly available **E-commerce App Transactional Dataset** published on Kaggle by Aditya Bagus Pratama.
 
-### Customers
+Dataset source:
 
-Contains customer profile information:
+https://www.kaggle.com/datasets/bytadit/transactional-ecommerce
 
-- Customer ID
-- Gender
-- Birthdate
-- Device information
+The dataset contains four CSV files used throughout the pipeline:
 
-### Products
+| Dataset | Description |
+|----------|-------------|
+| customers.csv | Customer demographic and device information |
+| products.csv | Product catalog and product metadata |
+| transactions.csv | Customer purchase transactions and payment details |
+| click_stream.csv | User behavior and application activity events |
 
-Contains product catalog information:
+The original dataset contains approximately 583 MB of data and includes transactional, behavioral, and product-level information suitable for building data warehouse and business intelligence solutions. :contentReference[oaicite:0]{index=0}
 
-- Category
-- Product type
-- Season
-- Usage
+Due to file size limitations, the original raw datasets are not included in this repository. To run the project locally, download the dataset from Kaggle and place the files into the appropriate local directories:
 
-### Transactions
-
-Contains purchase information:
-
-- Customer ID
-- Session ID
-- Payment method
-- Payment status
-- Shipment information
-- Total amount
-
-### Click Stream
-
-Contains customer behavior data:
-
-- Session ID
-- Event ID
-- Event timestamp
-- Traffic source
-- Event metadata
+```text
+dataset/
+org_dataset/
 
 ---
 
